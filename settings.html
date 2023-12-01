@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+ 
+</head>
+<body>
+    <div class="page d-flex">
+        <!------------START SIDEBAR------------>
+        <div class="sidebar p-20">
+            <h2 class="text-center p-relative">Elzero</h2>
+            <ul class="p-20">
+                <li class="d-flex align-center">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <!-- <img src="images/Book free icons designed by Freepik.jpg" class="image"  alt=""> -->
+                    <a href="index.html" class="p-10">Dashboard</a>
+                </li>
+                <li class="active d-flex align-center">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <!-- <img src="images/icons8-setting-50.png" class="image"  alt=""> -->
+                    <a href="settings.html" class="p-10">Settings</a>
+                </li>
+                <li class="d-flex align-center">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <!-- <img src="images/icons8-account-48.png" class="image"  alt=""> -->
+                    <a href="profile.html" class="p-10">Profile</a>
+                </li>
+                <li class="d-flex align-center">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <!-- <img src="images/icons8-share-48.png" class="image"  alt=""> -->
+                    <a href="projects.html" class="p-10">Projects</a>
+                </li>
+                <li class="d-flex align-center">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <!-- <img src="images/Student Graduation Hat Icon Stock Vector - Illustration of graduated, congrats_ 172453755.jpg" class="image"  alt=""> -->
+                    <a href="courses.html" class="p-10">Courses</a>
+                </li>
+                <li class="d-flex align-center">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <!-- <img src="images/icons8-account-32.png" class="image"  alt=""> -->
+                    <a href="friends.html" class="p-10">Friends</a>
+                </li>
+                <li class="d-flex align-center">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <!-- <img src="images/icons8-reconstruction-plan-48.png" class="image"  alt=""> -->
+                    <a href="files.html" class="p-10">Files</a>
+                </li>
+                <li class="d-flex align-center">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <!-- <img src="images/6438ae9e-1eac-48c8-a2d8-694ed07b7f25.jpg" class="image"  alt=""> -->
+                    <a href="plans.html" class="p-10">Plans</a>
+                </li>
+            </ul>
+        </div>
+        <!------------END SIDEBAR------------>
+        <!--------------------START CONTENT-------------------->
+        <div class="content">
+            <!--------------START HEAD-------------->
+            <div class="head d-between p-20">
+                <div class="search p-relative">
+                    <input type="text" class="" placeholder="Type A Keyword">
+                </div>
+                <div class="icons d-between">
+                     <div class="p-relative notification mt-10 mr-10">
+                        <img src="images/icons8-notification-48.png"  alt="">
+                     </div>
+                     <img src="images/avatar.png" alt="" class="user">
+                </div>
+            </div>
+            <!--------------END HEAD--------------->
+            <h1 class="p-relative">Settings</h1>
+            <!----------------START WRAPPER---------------->
+            <div class="wrapper d-grid gap-20">
+                <div class="site-control bg-white rad-10 h-400 p-20">
+                    <h2>Site Control</h2>
+                    <p>Control The Website If There Is A Maintenance</p>
+                    <div class="d-between">
+                        <div>
+                            <h4>Website Control</h4>
+                            <p>Open/Close Website And Type The Reason</p>
+                        </div>
+                        <!-----TOGGLE SWITCH COMPONENT----->
+                        <label >
+                            <input type="checkbox" class="toggle-checkbox" checked="true">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <textarea cols="30" rows="10" placeholder="Close Message Content" class="rad-6 p-10"></textarea>
+                </div>
+                <div class="general-info bg-white rad-10 p-20">
+                    <h2>General Info</h2>
+                    <p>General Information About Your Account</p>
+                    <form>
+                        <label for="">First Name</label><br>
+                        <input type="text" placeholder="First Name">
+                        <br><label for="">Last Name</label><br>
+                        <input type="text" placeholder="Last Name">
+                        <br><label for="">Email</label><br>
+                        <div class="d-between email">
+                            <input type="email" placeholder="o@gmail.com">
+                            <a href="#">Change</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="security-info bg-white rad-10 p-20">
+                    <h2>Security Info</h2>
+                    <p>Security Information About Your Account</p>
+                    <div class="d-between">
+                        <div>
+                            <h4>Password</h4>
+                            <p>Last Change On 25/10/2021</p>
+                        </div>
+                        <button class="btn btn-primary">Change</button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="d-between">
+                        <div>
+                            <h4>Two-Factor Authentication</h4>
+                            <p>Enable/Disable The Feature</p>
+                        </div>
+                        <!-----TOGGLE SWITCH COMPONENT----->
+                        <label >
+                            <input type="checkbox" class="toggle-checkbox" checked="true">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="line"></div>
+                    <div class="d-between">
+                        <div>
+                            <h4>Devices</h4>
+                            <p>Check The Login Devices List</p>
+                        </div>
+                        <button class="btn btn-gray">Devices</button>
+                    </div>
+                </div>
+                <div class="social-info bg-white rad-10 p-20">
+                    <h2>Social Info</h2>
+                    <p>Social Media Information</p>
+                    <br>
+                    <form>
+                        <div class="input-icon">
+                            <input type="text">
+                            <img src="images/twitter _ icon.jpg" alt="">
+                        </div>
+                        <div class="input-icon">
+                            <input type="text">
+                            <img src="images/0872cb12-b296-4bb7-97db-7fa15b6941dc.jpg" alt="">
+                        </div>
+                        <div class="input-icon">
+                            <input type="text">
+                            <img src="images/YouTube.jpg" alt="">
+                        </div>
+                        <div class="input-icon">
+                            <input type="text">
+                            <img src="images/LinkedIn logo social media rustic gray kraft Calling Card _ Zazzle.jpg" class="linkedin" alt="">
+                        </div>
+                    </form>
+                </div>
+                <div class="widgets-control bg-white rad-10 p-20">
+                    <h2>Widgets Control</h2>
+                    <p>Show/Hide Widgets</p>
+                    <div class="d-flex align-center">
+                        <input type="checkbox" checked="true">
+                        <h3>Quick Drafts</h3>
+                    </div>
+                    <div class="d-flex align-center">
+                        <input type="checkbox" checked="true">
+                        <h3>Yearly Targets</h3>
+                    </div>
+                    <div class="d-flex align-center">
+                        <input type="checkbox" checked="true">
+                        <h3>Tickets Statistics</h3>
+                    </div>
+                    <div class="d-flex align-center">
+                        <input type="checkbox" checked="true">
+                        <h3>Latest News</h3>
+                    </div>
+                    <div class="d-flex align-center">
+                        <input type="checkbox">
+                        <h3>Latest Tasks</h3>
+                    </div>
+                    <div class="d-flex align-center">
+                        <input type="checkbox" checked="true">
+                        <h3>Top Search Items</h3>
+                    </div>
+                </div>
+                <div class="backup-manager bg-white rad-10 p-20">
+                    <h2>Backup Manager</h2>
+                    <P>Control Backup Time And Location</P>
+                    <div class="d-flex align-center">
+                        <input type="radio" checked="true">
+                        <h3>Daily</h3>
+                    </div>
+                    <div class="d-flex align-center">
+                        <input type="radio">
+                        <h3>Weekly</h3>
+                    </div>
+                    <div class="d-flex align-center">
+                        <input type="radio">
+                        <h3>Monthly</h3>
+                    </div>
+                    <div class="line"></div>
+                   <div class="d-around">
+                        <div class="backup-mode text-center p-20 rad-10">
+                            <img src="images/icons8-account-24.png" alt="">
+                            <h3>Megaman</h3>
+                        </div>
+                        <div class="backup-mode text-center p-20 rad-10">
+                            <img src="images/icons8-account-24.png" alt="">
+                            <h3>Zero</h3>
+                        </div>
+                        <div class="backup-mode text-center p-20 rad-10">
+                            <img src="images/icons8-account-24.png" alt="">
+                            <h3>Segma</h3>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

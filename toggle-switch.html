@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .toggle-checkbox{
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        .toggle-switch{
+            width: 70px;
+            height: 30px;
+            background-color: #e3e3e3;
+            border-radius: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+        .toggle-switch::before{
+            background-image: url("images/icons8-cancel-48.png");
+            background-size: 30px 30px;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 1px;
+            content: "";
+        }
+        .toggle-checkbox:checked + .toggle-switch{
+            background:rgb(62, 62, 238);
+        }
+        .toggle-checkbox:checked + body{
+            background-color: aqua;
+        }
+        .toggle-checkbox:checked + .toggle-switch::before{
+            background-image: url("images/icons8-correct-48.png");
+            top: 0;
+            left: 40px;
+        }
+        
+        .checkbox label{
+            padding-left: 30px;
+            position: relative;
+            cursor: pointer;
+            
+        }
+        .checkbox label::before{
+            content: "Segmen";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        /* .checkbox label:checked{
+            background-color: rgb(80, 80, 235);
+        } */
+        .checkbox label::after{
+            background-image: url("images/icons8-account-24.png");
+            background-size: 20px 20px;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 200%;
+            left: 50%;
+            transform: translateY(-50%);
+            content: "";
+        }
+        .checkbox label:checked + .checkbox label::before{
+            border-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox" id="check" onclick="x()" class="toggle-checkbox" >
+        <div class="toggle-switch" id="toggle"></div>
+    </label>
+    <br>
+    <div class="checkbox">
+        <input type="checkbox" id="one" >
+        <label for="one"></label>
+    </div>
+    <script>
+        let check = document.getElementById("check");
+        let toggle = document.getElementById("toggle");
+        function x(){
+            if(check.checked == 1){
+            document.body.style.backgroundColor="black";
+        }
+        }
+    </script>
+</body>
+</html>
